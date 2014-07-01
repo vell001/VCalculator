@@ -161,7 +161,7 @@ void add::on_btn_del_clicked()
         ui->answer->setText(this->num1);
         break;
     case 2:
-        this->num2 = this->num2.left(this->num1.length()-1);
+        this->num2 = this->num2.left(this->num2.length()-1);
         ui->answer->setText(this->num2);
         break;
     case 3:
