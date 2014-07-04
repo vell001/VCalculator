@@ -32,38 +32,40 @@
       <property name="alignment">
        <set>Qt::AlignCenter</set>
       </property>
+      <property name="buddy">
+       <cstring>answer</cstring>
+      </property>
      </widget>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QLineEdit" name="answer">
-        <property name="font">
-         <font>
-          <family>Adobe Arabic</family>
-          <pointsize>36</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btn_del">
-        <property name="font">
-         <font>
-          <family>Adobe Arabic</family>
-          <pointsize>28</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>DEL</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QLineEdit" name="answer">
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>36</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_del">
+       <property name="font">
+        <font>
+         <family>Adobe Arabic</family>
+         <pointsize>28</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>DEL</string>
+       </property>
+      </widget>
+     </widget>
     </item>
     <item>
      <layout class="QGridLayout" name="gridLayout">
@@ -428,9 +430,28 @@
     </item>
    </layout>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>answer</tabstop>
+  <tabstop>btn_0</tabstop>
+  <tabstop>btn_1</tabstop>
+  <tabstop>btn_2</tabstop>
+  <tabstop>btn_3</tabstop>
+  <tabstop>btn_4</tabstop>
+  <tabstop>btn_5</tabstop>
+  <tabstop>btn_6</tabstop>
+  <tabstop>btn_7</tabstop>
+  <tabstop>btn_8</tabstop>
+  <tabstop>btn_9</tabstop>
+  <tabstop>btn_dot</tabstop>
+  <tabstop>btn_a</tabstop>
+  <tabstop>btn_s</tabstop>
+  <tabstop>btn_m</tabstop>
+  <tabstop>btn_d</tabstop>
+  <tabstop>btn_del</tabstop>
+  <tabstop>btn_e</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
